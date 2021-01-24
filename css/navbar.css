@@ -1,0 +1,94 @@
+.navbar-block {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.navbar-bg {
+    height: 51px;
+    background-color: var(--dark);
+}
+
+.navbar-logo {
+    height: 51px;
+    width: 146px;
+    float: left;
+
+    background-color: var(--accidental);
+
+    text-align: center;
+    line-height: 51px;
+}
+
+.navbar-menu-button {
+    display: none;
+    padding: 13.5px 12px;
+    color: var(--light);
+}
+
+.navbar-menu {
+    float: left;
+    line-height: 51px;
+}
+
+.navbar-menu a, .nav-icon {
+    padding: 16px 12px;
+    text-decoration: none;
+    color: var(--light);
+}
+
+.navbar-icons-block {
+    float: right;
+    line-height: 51px;
+}
+
+.navbar-menu a:hover {
+    background-color: var(--light);
+    color: var(--dark);
+    transition-duration: 0.3s;
+}
+
+.navbar-icons-block a:hover {
+    background-color: var(--light);
+    color: var(--dark);
+    transition-duration: 0.3s;
+}
+
+/* ----------------------------------- */
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+.navbar-menu-toggle a {
+    display: block;
+    height: 51px;
+    background-color: var(--dark);
+    padding: 16px 12px;
+    text-decoration: none;
+    color: var(--light);
+}
+
+.navbar-menu-toggle a:hover {
+    background-color: var(--light);
+    color: var(--dark);
+    transition-duration: 0.3s;
+}
+
+
+/* ----------------------------------- */
+
+.navbar-menu-toggle-show {
+    display: inherit;
+    margin: 6px;
+  }
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-menu-button {
+        display: inline-block;
+    }
+}
