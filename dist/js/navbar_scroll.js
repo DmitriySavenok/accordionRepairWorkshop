@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
     destination = jQuery(elementClick).offset().top - 70;
-    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 10);
+    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
     return false;
     });
 });
