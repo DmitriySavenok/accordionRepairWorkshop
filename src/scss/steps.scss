@@ -1,0 +1,91 @@
+.steps-screen {
+    background-color: $dark;
+}
+
+.steps-screen-title {
+    color: $light;
+}
+
+.steps-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.steps-item-circle {
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    background-color: $light;
+
+    font-weight: 700;
+    text-align: center;
+    line-height: 51px;
+    color: $dark;
+}
+
+.last-circle {
+    background-color: tomato !important;
+}
+
+.last-circle > i {
+    color: $light;
+}
+
+.steps-item-description {
+    display: inline-block;
+    width: 480px;
+}
+
+.steps-item-description > h5 {
+    color: $light;
+}
+
+.steps-item-description > p {
+    color: $light;
+}
+
+/* ----- Adaptation ----- */
+
+@media (max-width: 767px) {
+    /* стили для xs-устройств */
+    
+    .steps-item-circle {
+        width: 31px;
+        height: 31px;
+        margin-right: 8px;
+        line-height: 31px;
+    }
+
+    .steps-item-description {
+        width: 220px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* стили для sm-устройств */
+    .steps-item-description {
+        width: 275px;
+        height: 165px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    /* стили для md-устройств */
+    .steps-item-description {
+        width: 275px;
+        height: 160px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* стили для lg-устройств */
+    .steps-item-description {
+        width: 430px;
+    }
+}
+

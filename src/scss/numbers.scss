@@ -1,0 +1,61 @@
+.numbers-screen {
+    background-color: $dark;
+    color: $light;
+}
+
+.numbers-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.numbers {
+    text-align: center;
+    width: 60px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.numbers-description {
+    width: 262px;
+}
+
+
+@media (max-width: 767px) {
+    /* стили для xs-устройств */
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* стили для sm-устройств */
+    .numbers-item {
+        justify-content: left;
+    }
+
+    .numbers-description {
+        width: 648px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    /* стили для md-устройств */
+}
+
+@media (min-width: 1200px) {
+    /* стили для lg-устройств */
+
+    .numbers-item {
+        display: inline-block;
+    }
+
+    .numbers {
+        font-size: 2.5rem;
+        text-align: left;
+        display: block;
+    }
+
+    .numbers-description {
+        width: 340px;
+    }
+}

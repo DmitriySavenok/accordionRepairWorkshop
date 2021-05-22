@@ -1,0 +1,21 @@
+.close {
+	color: $dark;
+	background: none;
+	border: none;
+}
+
+.close:hover { 
+	color: tomato;
+}
+    
+.modal-body ul li {
+	line-height: 1.75rem;
+}
+
+.modal-body ul {
+	padding-left: 1rem;
+}
+
+.modal-close-btn {
+	background: none;
+}

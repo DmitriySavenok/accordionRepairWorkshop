@@ -1,0 +1,63 @@
+.about-screen {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.about-grid {
+    margin-top: 3rem;
+}
+
+.about-item-master {
+    text-align: center;
+}
+
+.avatar-master {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.ava_m1 {
+    background-image: url(../img/master_avatar.jpg);
+    background-size: cover;
+}
+
+.about-item p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+
+.about-item a {
+    color: tomato;
+}
+
+
+
+
+/* ----- Adaptation ----- */
+
+@media (max-width: 767px) {
+    /* стили для xs-устройств */
+   .about-item-master {
+       margin-top: 2rem;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* стили для sm-устройств */
+    .about-item-master {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    /* стили для md-устройств */
+
+}
+
+@media (min-width: 1200px) {
+    /* стили для lg-устройств */
+    
+}
