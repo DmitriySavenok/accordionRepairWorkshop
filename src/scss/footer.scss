@@ -20,6 +20,11 @@ footer {
     color: $light;
 }
 
+footer a {
+    color: $light;
+    text-decoration: underline;
+}
+
 footer a:hover {
     color: $light;
     text-decoration: none;
