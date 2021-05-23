@@ -16,10 +16,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-menu > li > a {
-    color: $light;
-}
-
 footer a {
     color: $light;
     text-decoration: underline;
@@ -34,14 +30,6 @@ footer a:hover {
     margin-top: 35px;
     text-align: center;
     text-decoration: none;
-}
-
-.autor > a {
-    color: $light;
-}
-
-.autor > a:hover {
-    color: $light;
 }
 
 .footer-adress, .footer-phone, .footer-mail {

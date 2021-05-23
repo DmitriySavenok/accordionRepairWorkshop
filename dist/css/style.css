@@ -10459,10 +10459,6 @@ footer {
   margin-bottom: 10px;
 }
 
-.footer-menu > li > a {
-  color: #f2f2f2;
-}
-
 footer a {
   color: #f2f2f2;
   text-decoration: underline;
@@ -10477,14 +10473,6 @@ footer a:hover {
   margin-top: 35px;
   text-align: center;
   text-decoration: none;
-}
-
-.autor > a {
-  color: #f2f2f2;
-}
-
-.autor > a:hover {
-  color: #f2f2f2;
 }
 
 .footer-adress,
