@@ -23,7 +23,7 @@ footer {
 
 footer a:hover {
     color: $light;
-    text-decoration: underline;
+    text-decoration: underline !important; 
 }
 
 .autor {
