@@ -1,0 +1,67 @@
+.main-screen {
+  height: 100vh;
+  background: url("../img/main-screen-backround.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-screen .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+}
+
+.main-screen__title {
+  color: $light-color;
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-screen__address-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.main-screen__address {
+  color: $light-color;
+  text-decoration: none;
+}
+
+.main-screen__address svg {
+  margin-right: 10px;
+}
+
+.main-screen__phone-block {
+  text-align: center;
+}
+
+.main-screen__offer {
+  color: $light-color;
+}
+
+.main-screen__phone-link {
+  color: $accent-color;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .main-screen__title {
+    font-size: 32px;
+  }
+
+  .main-screen__phone-link {
+    font-size: 32px;
+  }
+
+  .hide {
+    display: inherit;
+  }
+}
