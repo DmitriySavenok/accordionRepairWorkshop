@@ -9,7 +9,7 @@ section.services-screen
         .services-screen__item-content
           p.services-screen__item-description Ремонт и регулировка механики, реставрация и изготовление меха, наладка регистров, подгонка ремней.
         .services-screen__item-button
-          button(class="button services-screen__button") Список ремонтных работ
+          button(class="button services-screen__button" data-bs-toggle="modal" data-bs-target="#repairModal") Список ремонтных работ
             <svg width="8" height="14" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M8 7L1.51351 0L4.76837e-07 1.63333L4.97297 7L4.76837e-07 12.3667L1.51351 14L8 7Z"/>
             </svg>
@@ -78,3 +78,36 @@ section.services-screen
             <svg width="8" height="14" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M8 7L1.51351 0L4.76837e-07 1.63333L4.97297 7L4.76837e-07 12.3667L1.51351 14L8 7Z"/>
             </svg>
+
+<!-- Repair Modal -->
+<div class="modal fade" id="repairModal" tabindex="-1" aria-labelledby="repairModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="repairModalLabel">Ремонт</h4>
+        <button type="button" class="modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+          <svg class="modal-close-icon" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.0625 6L11.1875 2.875C11.5938 2.5 11.5938 1.875 11.1875 1.5L10.5 0.8125C10.125 0.40625 9.5 0.40625 9.125 0.8125L6 3.9375L2.84375 0.8125C2.46875 0.40625 1.84375 0.40625 1.46875 0.8125L0.78125 1.5C0.375 1.875 0.375 2.5 0.78125 2.875L3.90625 6L0.78125 9.15625C0.375 9.53125 0.375 10.1562 0.78125 10.5312L1.46875 11.2188C1.84375 11.625 2.46875 11.625 2.84375 11.2188L6 8.09375L9.125 11.2188C9.5 11.625 10.125 11.625 10.5 11.2188L11.1875 10.5312C11.5938 10.1562 11.5938 9.53125 11.1875 9.15625L8.0625 6Z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Ремонт и наладка левой и правой механик.</li>
+          <li>Переклейка клапанов.</li>
+          <li>Наладка переключателей регистров.</li>
+          <li>Ремонт или изготовление нового  меха.</li>
+          <li>Установка крепления ремней.</li>
+          <li>Замена прокладок полукорпусов.</li>
+          <li>Ремонт и подгонка ремней.</li>
+          <li>Покраска отдельных деталей инструмента.</li>
+          <li>Модернизация</li>
+          <li>Установка механизма спуска воздуха и механизма регулировки натяжения левого ремня в гармонях.</li>
+          <li>Установка дополнительных «диезов» в гармонях.</li>
+          <li>Реставрация инкрустации любительских гармоней.</li>
+          <li>Предпродажная подготовка инструмента.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

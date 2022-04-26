@@ -30,6 +30,23 @@
   fill: $dark-color;
 }
 
+.modal-close-icon {
+  fill: $dark-color;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+
+  &:hover .modal-close-icon {
+    fill: $main-color;
+  }
+
+  &:active .modal-close-icon {
+    fill: $button-active;
+  }
+}
+
 .services-screen__item {
   display: flex;
   flex-direction: column;

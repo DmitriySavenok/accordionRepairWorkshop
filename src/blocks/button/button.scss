@@ -18,7 +18,8 @@
   }
 
   &:active {
-    background-color: rgba(242 98 65 / 80%);
+    background-color: $button-active;
+    border: 1px solid $button-active;
   }
 
   &:hover svg {
