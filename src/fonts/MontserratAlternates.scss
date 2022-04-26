@@ -1,8 +1,22 @@
 @font-face {
+  font-weight: 100;
+  font-family: MontserratAlternates;
+  font-style: normal;
+  src: url("../fonts/MontserratAlternates-Light.woff2"), url("../fonts/MontserratAlternates-Light.woff"), url("../fonts/MontserratAlternates-Light.ttf");
+}
+
+@font-face {
   font-weight: 400;
   font-family: MontserratAlternates;
   font-style: normal;
   src: url("../fonts/MontserratAlternates-Regular.woff2"), url("../fonts/MontserratAlternates-Regular.woff"), url("../fonts/MontserratAlternates-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: MontserratAlternates;
+  font-style: normal;
+  src: url("../fonts/MontserratAlternates-SemiBold.woff2"), url("../fonts/MontserratAlternates-SemiBold.woff"), url("../fonts/MontserratAlternates-SemiBold.ttf");
 }
 
 @font-face {

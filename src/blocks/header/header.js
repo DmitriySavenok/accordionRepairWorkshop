@@ -7,6 +7,18 @@ let button = document.querySelector("#navigation-toggle");
 let burderIcon = document.querySelector(".menu-icon");
 let closeIcon = document.querySelector(".close-icon");
 
+$(document).ready(function() {
+  jQuery(".scrollto").click(function () {
+  elementClick = jQuery(this).attr("href")
+
+  navigationClose();
+
+  destination = jQuery(elementClick).offset().top - 80;
+  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 500);
+  return false;
+  });
+});
+
 function navigationClose() {
   button.classList.remove('opened');
   burderIcon.classList.remove('icon-hide');

@@ -1,10 +1,13 @@
 @import "variables";
 @import "fonts/MontserratAlternates.scss";
+@import "blocks/button/button.scss";
 @import "blocks/header/header.scss";
 @import "blocks/main-screen/main-screen.scss";
+@import "blocks/services-screen/services-screen.scss";
 
 body {
   font-family: MontserratAlternates, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -15,9 +18,9 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.container {
+.container-custom {
   box-sizing: border-box;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }

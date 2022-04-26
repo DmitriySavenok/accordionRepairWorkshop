@@ -1,0 +1,131 @@
+.services-screen {
+  padding: 80px 0;
+  background-color: $light-color;
+}
+
+.services-screen__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.services-screen__title {
+  margin-bottom: 50px;
+  color: $dark-color;
+  font-weight: 100;
+  font-size: 32px;
+  text-align: center;
+}
+
+.services-screen__button {
+  width: 100%;
+  color: $dark-color;
+  border: 1px solid $dark-color;
+  transition: 0.5s;
+}
+
+.services-screen__button svg {
+  transition: 0.5s;
+  fill: $dark-color;
+}
+
+.services-screen__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding: 16px;
+  background: linear-gradient(135deg, #fefefe 0%, #e6e6e6 100%);
+  border-radius: 6px;
+  box-shadow:
+    inset 1px 1px 2px rgba(255 255 255 / 30%),
+    inset -1px -1px 2px rgba(206 206 206 / 50%),
+    -4px 4px 8px rgba(206 206 206 / 20%),
+    4px -4px 8px rgba(206 206 206 / 20%),
+    -4px -4px 8px rgba(255 255 255 / 90%),
+    4px 4px 10px rgba(206 206 206 / 90%);
+  user-select: none;
+
+  &:hover {
+    background: linear-gradient(135deg, #e6e6e6 0%, #fefefe 100%);
+    box-shadow:
+      inset 1px 1px 2px rgba(255 255 255 / 30%),
+      inset -1px -1px 2px rgba(218 218 218 / 50%),
+      -5px 5px 10px rgba(218 218 218 / 20%),
+      5px -5px 10px rgba(218 218 218 / 20%),
+      -5px -5px 10px rgba(255 255 255 / 90%),
+      5px 5px 13px rgba(218 218 218 / 90%);
+  }
+
+  &:hover .services-screen__button {
+    color: $main-color;
+    border: 1px solid $main-color;
+  }
+
+  &:hover .services-screen__button svg {
+    fill: $main-color;
+  }
+}
+
+.services-screen__item .services-screen__button:hover {
+  color: $light-color;
+  background-color: $main-color;
+}
+
+.services-screen__item .services-screen__button:active {
+  background-color: $button-active;
+  border: 1px solid $button-active;
+}
+
+.services-screen__item .services-screen__button:hover svg {
+  fill: $light-color;
+}
+
+.services-screen__item-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.services-screen__item-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.services-screen__item-content {
+  margin-bottom: 50px;
+}
+
+.services-screen__item-button {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1010px) {
+  .services-screen__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .services-screen__button {
+    color: $main-color;
+    border: 1px solid $main-color;
+  }
+
+  .services-screen__button svg {
+    fill: $main-color;
+  }
+
+  .services-screen__item:hover {
+    background: linear-gradient(135deg, #fefefe 0%, #e6e6e6 100%);
+    box-shadow:
+      inset 1px 1px 2px rgba(255 255 255 / 30%),
+      inset -1px -1px 2px rgba(206 206 206 / 50%),
+      -4px 4px 8px rgba(206 206 206 / 20%),
+      4px -4px 8px rgba(206 206 206 / 20%),
+      -4px -4px 8px rgba(255 255 255 / 90%),
+      4px 4px 10px rgba(206 206 206 / 90%);
+  }
+}
