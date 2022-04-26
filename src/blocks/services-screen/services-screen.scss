@@ -3,9 +3,38 @@
   background-color: $light-color;
 }
 
+.services-screen__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: space-between;
+}
+
 .services-screen__title {
+  margin-bottom: 50px;
   color: $dark-color;
   font-weight: 100;
   font-size: 32px;
   text-align: center;
+}
+
+.services-screen__item {
+  height: 250px;
+  background: linear-gradient(135deg, #fefefe 0%, #e6e6e6 100%);
+  border-radius: 6px;
+  box-shadow:
+    -4px 4px 8px rgba(206 206 206 / 20%),
+    4px -4px 8px rgba(206 206 206 / 20%),
+    -4px -4px 8px rgba(255 255 255 / 90%),
+    4px 4px 10px rgba(206 206 206 / 90%),
+    inset 1px 1px 2px rgba(255 255 255 / 30%),
+    inset -1px -1px 2px rgba(206 206 206 / 50%);
+}
+
+@media (max-width: 1010px) {
+  .services-screen__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
