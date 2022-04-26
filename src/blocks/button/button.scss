@@ -1,0 +1,28 @@
+.button svg {
+  fill: $main-color;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 16px;
+  color: $main-color;
+  border: 1px solid $main-color;
+  border-radius: 50px;
+  transition: 0.5s;
+
+  &:hover {
+    color: $light-color;
+    background-color: $main-color;
+  }
+
+  &:active {
+    background-color: rgba(242 98 65 / 80%);
+  }
+
+  &:hover svg {
+    transition: 1s;
+    fill: $light-color;
+  }
+}

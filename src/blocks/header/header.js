@@ -13,8 +13,8 @@ $(document).ready(function() {
 
   navigationClose();
 
-  destination = jQuery(elementClick).offset().top - 70;
-  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
+  destination = jQuery(elementClick).offset().top - 80;
+  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 500);
   return false;
   });
 });
