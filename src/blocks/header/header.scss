@@ -144,7 +144,26 @@
     grid-column: 1 / 4;
     height: 0;
     background-color: $dark-color;
+    transition: all 0.8s ease;
+  }
+
+  .navigation-opened {
+    height: 100%;
     transition: all 0.5s ease;
+  }
+
+  .header__navigation-list {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+
+  .header__navigation-list-view {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.8s ease;
+    pointer-events: auto;
   }
 
   .header__navigation-item {
@@ -159,23 +178,6 @@
     display: block;
     height: auto;
     padding: 16px;
-  }
-
-  .navigation-opened {
-    height: 100%;
-  }
-
-  .header__navigation-list {
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: all 0.5s ease;
-    pointer-events: none;
-  }
-
-  .header__navigation-list-view {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
   }
 
   .header__navigation-toggle-block {
