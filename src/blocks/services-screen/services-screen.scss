@@ -126,13 +126,22 @@
     gap: 30px;
   }
 
+  .services-screen__item-content {
+    margin-bottom: 36px;
+  }
+
   .services-screen__button {
+    max-width: 366px;
     color: $main-color;
     border: 1px solid $main-color;
   }
 
   .services-screen__button svg {
     fill: $main-color;
+  }
+
+  .services-screen__item {
+    min-height: auto;
   }
 
   .services-screen__item:hover {
