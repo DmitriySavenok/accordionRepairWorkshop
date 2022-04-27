@@ -7,18 +7,6 @@ let button = document.querySelector("#navigation-toggle");
 let burderIcon = document.querySelector(".menu-icon");
 let closeIcon = document.querySelector(".close-icon");
 
-$(document).ready(function() {
-  jQuery(".scrollto").click(function () {
-  elementClick = jQuery(this).attr("href")
-
-  navigationClose();
-
-  destination = jQuery(elementClick).offset().top - 80;
-  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 500);
-  return false;
-  });
-});
-
 function navigationClose() {
   button.classList.remove('opened');
   burderIcon.classList.remove('icon-hide');
@@ -51,3 +39,26 @@ function navigationToggle() {
     }
   });
 }
+
+document.querySelectorAll('a[href^="#"').forEach(link => {
+
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      let href = this.getAttribute('href').substring(1);
+
+      const scrollTarget = document.getElementById(href);
+
+      const topOffset = 80;
+
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - topOffset;
+
+      window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth'
+      });
+
+      navigationClose();
+  });
+});

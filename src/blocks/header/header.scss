@@ -52,14 +52,9 @@
     color: rgba(44 44 44 / 60%);
     background-color: $header-link-active;
   }
-
-  &:focus {
-    color: $light-color;
-    background: none;
-  }
 }
 
-.header__navigation-button {
+.header__navigation-toggle {
   cursor: pointer;
 
   &:hover {
@@ -67,7 +62,7 @@
   }
 
   &:active {
-    background-color: $header-link-active;
+    background-color: $dark-color;
   }
 }
 
@@ -132,7 +127,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1080px) {
   .header__grid {
     display: grid;
     grid-template-rows: 50px auto;
