@@ -1,0 +1,46 @@
+.numbers-screen {
+  padding: 80px 0;
+  color: $light-color;
+  background-color: $dark-color;
+}
+
+.numbers-screen__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.numbers-screen__item-title {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+@media (max-width: 1080px) {
+  .numbers-screen__grid {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+
+  .numbers-screen__item {
+    display: grid;
+    grid-template-columns: 72px auto;
+    gap: 30px;
+  }
+
+  .numbers-screen__item-title {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .numbers-screen__item-description {
+    margin-bottom: 0;
+    padding-top: 8px;
+  }
+
+  .numbers-screen__item-description br {
+    display: none;
+    padding-top: 8px;
+    padding-bottom: 0;
+  }
+}
