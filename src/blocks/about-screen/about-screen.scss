@@ -38,11 +38,11 @@
 
 .about-screen__shop-button-block {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .about-screen__shop-link {
-  max-width: 550px;
+  width: 100%;
 }
 
 .about-screen__photo-block {
@@ -82,6 +82,15 @@
   .about-screen__grid {
     grid-template-columns: auto;
     gap: 36px;
+  }
+
+  .about-screen__shop-button-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-screen__shop-link {
+    max-width: 550px;
   }
 }
 
