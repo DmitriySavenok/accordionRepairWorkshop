@@ -1,0 +1,37 @@
+.gallery-screen {
+  padding: 80px 0;
+  background-color: $light-color;
+}
+
+.gallery-screen__title {
+  margin-bottom: 50px;
+  color: $dark-color;
+  font-weight: 100;
+  font-size: 32px;
+  text-align: center;
+}
+
+.gallery-screen__item {
+  margin-bottom: 30px;
+  text-align: center;
+  transition: 0.5s ease-in;
+
+  &:hover {
+    filter: opacity(60%);
+  }
+}
+
+.gallery-screen__image {
+  box-sizing: border-box;
+  padding: 5px;
+  background: $light-color;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow:
+    -6px 6px 12px rgba(223 223 223 / 20%),
+    6px -6px 12px rgba(223 223 223 / 20%),
+    -6px -6px 12px rgba(255 255 255 / 90%),
+    6px 6px 15px rgba(223 223 223 / 90%),
+    inset 1px 1px 2px rgba(255 255 255 / 30%),
+    inset -1px -1px 2px rgba(223 223 223 / 50%);
+}

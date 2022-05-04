@@ -162,3 +162,9 @@
       4px 4px 10px rgba(206 206 206 / 90%);
   }
 }
+
+@media (max-width: 600px) {
+  .services-screen__button {
+    max-width: 100%;
+  }
+}
