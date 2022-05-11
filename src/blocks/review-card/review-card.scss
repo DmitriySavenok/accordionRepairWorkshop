@@ -1,0 +1,74 @@
+.review-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  min-height: 310px;
+  margin: 0 auto;
+  padding: 16px;
+  color: $dark-color;
+  background: linear-gradient(135deg, #fefefe 0%, #e6e6e6 100%);
+  border-radius: 6px;
+  user-select: none;
+}
+
+.review-card__head {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.review-card__photo {
+  flex-shrink: 0;
+  width: 63px;
+  height: 63px;
+  overflow: hidden;
+  background-color: $header-link-active;
+  border-radius: 50%;
+}
+
+.review-card__client-name {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.review-card__client-instrument,
+.review-card__client-city {
+  display: inline;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.review-card__client-review {
+  text-indent: 16px;
+}
+
+.review-card__client-social-link {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.review-social-icon {
+  margin-right: 8px;
+  transition: 0.3s ease;
+  fill: $dark-color;
+}
+
+.review-social-link {
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  color: $dark-color;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.review-social-link:hover .review-social-icon {
+  fill: $main-color;
+}
