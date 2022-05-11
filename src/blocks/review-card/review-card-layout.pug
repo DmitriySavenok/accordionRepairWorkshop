@@ -1,21 +1,24 @@
 //- Блок с переменными используемыми в карточке отзывов
 block vars
-  - var clientClass; //- Класс который будет у данной карточки в CSS
+  - var clientClass; //- Класс который будет у данной карточки в CSS, а так же название изображения аватарки.
   - var clientName; //- Имя клиента
-  - var clientsInstrumen; //- На чём клиент играет (запись типа: гармонист, аккордионист, пианист, серипач)
+  - var clientsInstrumen; //- На чём клиент играет (запись типа: гармонист, аккордионист, пианист, скрипач), в конце ставится запятая и пробел.
   - var clientCity; //- Город, населённый пункт
-  - var clientPhoto; //- Путь до фотографии (аватарки клиента)
+  - var clientPhotoUrl; //- Путь до фотографии (аватарки клиента)
   - var clientLink; //- Ссылка на какую либо соц.сеть клиента
   - var clientReview; //- Текст отзыва
 
 .review-card(class=clientClass)
   .review-card__head
     .review-card__photo
+      picture
+        source(srcset='img/photo/reviews-screen-avatars/' + clientClass + '.avif' type="image/avif")
+        source(srcset='img/photo/reviews-screen-avatars/' + clientClass + '.webp' type="image/webp")
+        source(srcset='img/photo/reviews-screen-avatars/' + clientClass + '.jpg' type="image/jpg")
+        img(width="63px" height="auto" class="review-card__img" src='img/photo/reviews-screen-avatars/' + clientClass + '.jpg' alt="Фото клиента")
     .review-card__client-info
       p.review-card__client-name #{clientName}
       p.review-card__client-instrument #{clientsInstrumen}
-        | ,
-        |
       p.review-card__client-city #{clientCity}
   .review-card__review-block
     p.review-card__client-review #{clientReview}

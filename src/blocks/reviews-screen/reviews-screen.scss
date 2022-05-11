@@ -13,9 +13,23 @@
 }
 
 .carousel-indicators {
-  position: static !important;
+  top: auto;
+  bottom: -60px;
 }
 
-.carousel-inner {
-  margin-bottom: 32px;
+@media (max-width: 768px) {
+  .reviews-screen__title {
+    margin-bottom: 80px;
+  }
+
+  .carousel-control-mobile {
+    top: -55px;
+    bottom: auto;
+  }
+
+  .carousel-indicators {
+    top: -50px;
+    bottom: auto;
+    margin-bottom: 24px;
+  }
 }

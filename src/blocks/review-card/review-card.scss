@@ -1,8 +1,8 @@
 .review-card {
   display: flex;
   flex-direction: column;
-  width: 540px;
-  height: 310px;
+  max-width: 540px;
+  min-height: 310px;
   margin: 0 auto;
   padding: 16px;
   color: $dark-color;
@@ -18,8 +18,10 @@
 }
 
 .review-card__photo {
+  flex-shrink: 0;
   width: 63px;
   height: 63px;
+  overflow: hidden;
   background-color: $header-link-active;
   border-radius: 50%;
 }
@@ -37,6 +39,10 @@
   font-size: 16px;
 }
 
+.review-card__client-review {
+  text-indent: 16px;
+}
+
 .review-card__client-social-link {
   margin-top: auto;
   margin-bottom: 0;
@@ -51,7 +57,7 @@
 .review-social-link {
   display: flex;
   align-items: center;
-  width: 205px;
+  max-width: fit-content;
   color: $dark-color;
   font-weight: 400;
   font-size: 16px;
