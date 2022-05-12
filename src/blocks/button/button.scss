@@ -1,4 +1,4 @@
-.button svg {
+.button-icon {
   transition: 0.5s ease;
   fill: $main-color;
 }
@@ -26,7 +26,7 @@
     border: 1px solid $button-active;
   }
 
-  &:hover svg {
+  &:hover .button-icon {
     fill: $light-color;
   }
 }

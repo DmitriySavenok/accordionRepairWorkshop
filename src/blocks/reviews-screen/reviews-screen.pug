@@ -32,3 +32,10 @@ section.reviews-screen
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      .reviews-screen__feedback-button
+        button(class="button feedback-button" data-bs-toggle="modal" data-bs-target="#feedback-modal") Оставить свой отзыв
+          <svg class="feedback-button-icon" width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0C4.5625 0 1 2.9375 1 6.5C1 8.0625 1.65625 9.46875 2.78125 10.5938C2.375 12.1875 1.0625 13.5625 1.0625 13.5938C1 13.6562 0.96875 13.7812 1 13.875C1.0625 13.9688 1.125 14 1.25 14C3.3125 14 4.875 13.0312 5.625 12.4062C6.65625 12.7812 7.78125 13 9 13C13.4062 13 17 10.0938 17 6.5C17 2.9375 13.4062 0 9 0ZM5 7.5C4.4375 7.5 4 7.0625 4 6.5C4 5.96875 4.4375 5.5 5 5.5C5.53125 5.5 6 5.96875 6 6.5C6 7.0625 5.53125 7.5 5 7.5ZM9 7.5C8.4375 7.5 8 7.0625 8 6.5C8 5.96875 8.4375 5.5 9 5.5C9.53125 5.5 10 5.96875 10 6.5C10 7.0625 9.53125 7.5 9 7.5ZM13 7.5C12.4375 7.5 12 7.0625 12 6.5C12 5.96875 12.4375 5.5 13 5.5C13.5312 5.5 14 5.96875 14 6.5C14 7.0625 13.5312 7.5 13 7.5Z"/>
+          </svg>
+
+include ../feedback-modal/feedback-modal.pug
