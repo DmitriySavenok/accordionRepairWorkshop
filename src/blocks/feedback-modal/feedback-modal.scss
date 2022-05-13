@@ -49,7 +49,12 @@
 }
 
 .feedback-modal__privicy-text {
+  color: $dark-color;
   font-size: 10px;
+}
+
+.privicy-link {
+  color: $dark-color;
 }
 
 @media (max-width: 585px) {
