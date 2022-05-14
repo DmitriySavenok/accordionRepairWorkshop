@@ -32,13 +32,14 @@
   transition: 0.3s ease;
 }
 
-.delivery-screen__map-link:hover .delivery-screen__photo {
+.delivery-screen__button:hover .delivery-screen__photo {
   filter: opacity(60%);
 }
 
-.delivery-screen__map-link {
+.delivery-screen__button {
   color: $dark-color;
-  text-decoration: none;
+  border: none;
+  cursor: pointer;
   transition: 0.3s ease;
 
   &:hover {
@@ -62,6 +63,29 @@
   text-indent: 16px;
 }
 
-.delivery-screen__delivery-company-logo {
-  margin-bottom: 36px;
+.delivery-screen__delivery-company-block {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+@media (max-width: 968px) {
+  .delivery-screen__grid {
+    grid-template-columns: auto;
+  }
+
+  .delivery-screen__address {
+    justify-content: center;
+  }
+
+  .delivery-screen__delivery-company-block {
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .delivery-screen__delivery-company-logo {
+    width: 100%;
+    height: auto;
+  }
 }

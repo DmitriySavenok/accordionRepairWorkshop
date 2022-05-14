@@ -3,7 +3,7 @@ section.delivery-screen
     h2.delivery-screen__title#delivery-screen Доставка
     .delivery-screen__grid
       .delivery-screen__map-block
-        a(href="#" class="delivery-screen__map-link" data-bs-toggle="modal" data-bs-target="#feedback-modal")
+        button(class="delivery-screen__button" data-bs-toggle="modal" data-bs-target="#mapModal")
           <picture>
             <source srcset="img/photo/delivery-screen/map-link-img.avif" type="image/avif">
             <source srcset="img/photo/delivery-screen/map-link-img.webp" type="image/webp">
@@ -16,7 +16,10 @@ section.delivery-screen
             </svg> Брянская область, г. Клинцы
       .delivery-screen__info-block
         p.delivery-screen__info-text Если вы находитесь в другом городе или регионе и у Вас нет возможности лично привезти инструмент, можно воспользоваться услугами транспортных компаний («Деловые линии», «СДЭК»). В пределах Брянской области могу лично осуществить доставку отремонтированного инструмента.
-        a(href="#" class="delivery-screen__delivery-company-link busines-lines-logo")
-          img(class="delivery-screen__delivery-company-logo" src="img/photo/delivery-screen/delivery-busines-lines.png", alt="Логотип деловых линий")
-        a(href="#" class="delivery-screen__delivery-company-link cdek-logo")
-          img(class="delivery-screen__delivery-company-logo" src="img/photo/delivery-screen/delivery-cdek.png", alt="Логотип CDEK")
+        .delivery-screen__delivery-company-block
+          a(href="#" class="delivery-screen__delivery-company-link busines-lines-logo")
+            img(class="delivery-screen__delivery-company-logo" src="img/photo/delivery-screen/delivery-busines-lines.png", alt="Логотип деловых линий")
+          a(href="#" class="delivery-screen__delivery-company-link cdek-logo")
+            img(class="delivery-screen__delivery-company-logo" src="img/photo/delivery-screen/delivery-cdek.png", alt="Логотип CDEK")
+
+include ../map/map.pug
