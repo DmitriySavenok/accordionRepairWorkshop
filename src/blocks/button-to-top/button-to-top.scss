@@ -1,0 +1,49 @@
+.button-to-top__icon {
+  height: 16px;
+  fill: $main-color;
+  stroke: $main-color;
+}
+
+.button-to-top {
+  position: fixed;
+  right: -100px;
+  bottom: 50px; /* отступ кнопки от нижнего края страницы */
+  z-index: 10;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: $light-color;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(223 223 223 / 80%);
+  cursor: pointer;
+  transition: all ease-out 0.8s;
+
+  &:active {
+    background-color: $button-active;
+    opacity: 0.6;
+  }
+
+  .button-to-top:active .button-to-top__icon {
+    fill: $light-color;
+    stroke: $light-color;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button-to-top:hover {
+    color: $light-color;
+    background-color: $main-color;
+  }
+
+  .button-to-top:hover .button-to-top__icon {
+    fill: $light-color;
+    stroke: $light-color;
+  }
+}
+
+.show {
+  right: 20px;
+}

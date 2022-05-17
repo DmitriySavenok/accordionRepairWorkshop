@@ -12,21 +12,33 @@
   color: $main-color;
   text-align: left;
   text-decoration: none;
+  background: none;
   border: 1px solid $main-color;
   border-radius: 50px;
   transition: 0.5s ease;
 
   &:hover {
-    color: $light-color;
-    background-color: $main-color;
+    color: $main-color;
   }
 
   &:active {
+    color: $light-color;
     background-color: $button-active;
     border: 1px solid $button-active;
   }
 
-  &:hover .button-icon {
+  &:active .button-icon {
+    fill: $light-color;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    color: $light-color;
+    background-color: $main-color;
+  }
+
+  .button:hover .button-icon {
     fill: $light-color;
   }
 }

@@ -30,17 +30,6 @@
     -4px -4px 8px rgba(255 255 255 / 90%),
     4px 4px 10px rgba(206 206 206 / 90%);
   user-select: none;
-
-  &:hover {
-    background: linear-gradient(135deg, #e6e6e6 0%, #fefefe 100%);
-    box-shadow:
-      inset 1px 1px 2px rgba(255 255 255 / 30%),
-      inset -1px -1px 2px rgba(218 218 218 / 50%),
-      -5px 5px 10px rgba(218 218 218 / 20%),
-      5px -5px 10px rgba(218 218 218 / 20%),
-      -5px -5px 10px rgba(255 255 255 / 90%),
-      5px 5px 13px rgba(218 218 218 / 90%);
-  }
 }
 
 .useful-info-screen__item-head {
@@ -67,6 +56,19 @@
 
 .useful-info-button {
   max-width: 384px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .useful-info-screen__item:hover {
+    background: linear-gradient(135deg, #e6e6e6 0%, #fefefe 100%);
+    box-shadow:
+      inset 1px 1px 2px rgba(255 255 255 / 30%),
+      inset -1px -1px 2px rgba(218 218 218 / 50%),
+      -5px 5px 10px rgba(218 218 218 / 20%),
+      5px -5px 10px rgba(218 218 218 / 20%),
+      -5px -5px 10px rgba(255 255 255 / 90%),
+      5px 5px 13px rgba(218 218 218 / 90%);
+  }
 }
 
 @media (max-width: 991px) {
