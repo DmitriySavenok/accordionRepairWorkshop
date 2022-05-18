@@ -32,10 +32,6 @@
   transition: 0.3s ease;
 }
 
-.delivery-screen__button:hover .delivery-screen__photo {
-  filter: opacity(60%);
-}
-
 .delivery-screen__button {
   color: $dark-color;
   border: none;
@@ -67,6 +63,21 @@
   display: flex;
   flex-direction: column;
   gap: 36px;
+}
+
+.delivery-screen__delivery-company-link {
+  width: fit-content;
+  transition: 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .delivery-screen__button:hover .delivery-screen__photo {
+    filter: opacity(80%);
+  }
+
+  .delivery-screen__delivery-company-link:hover {
+    opacity: 0.6;
+  }
 }
 
 @media (max-width: 968px) {
