@@ -12,6 +12,10 @@
 @import "blocks/useful-info-screen/useful-info-screen.scss";
 @import "blocks/reviews-screen/reviews-screen.scss";
 @import "blocks/review-card/review-card.scss";
+@import "blocks/feedback-modal/feedback-modal.scss";
+@import "blocks/delivery-screen/delivery-screen.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/button-to-top/button-to-top.scss";
 
 body {
   font-family: MontserratAlternates, Arial, Helvetica, sans-serif;
@@ -31,4 +35,31 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(206 206 206 / 36%) $dark-color;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body::-webkit-scrollbar {
+    width: 8px;
+    background-color: $dark-color;
+    transition: 0.3s ease;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(206 206 206 / 36%);
+    border-radius: 30px;
+    transition: 0.3s ease;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: $header-link-active;
+  }
+
+  body::-webkit-scrollbar-thumb:active {
+    background-color: $button-active;
+  }
 }

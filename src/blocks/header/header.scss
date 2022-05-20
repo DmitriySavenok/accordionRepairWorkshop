@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   height: 50px;
   background-color: $dark-color;
@@ -45,8 +45,7 @@
   transition: all 0.5s ease;
 
   &:hover {
-    color: $dark-color;
-    background-color: $light-color;
+    color: $light-color;
   }
 
   &:active {
@@ -57,10 +56,6 @@
 
 .header__navigation-toggle {
   cursor: pointer;
-
-  &:hover {
-    background-color: $dark-color;
-  }
 
   &:active {
     background-color: $dark-color;
@@ -111,10 +106,6 @@
   fill: rgba(44 44 44 / 60%);
 }
 
-.header__social-icons-link:focus .header__social-icon {
-  fill: $light-color;
-}
-
 .header__navigation-toggle:active .header__navigation-toggle-icon,
 .header__navigation-toggle:hover .header__navigation-toggle-icon {
   fill: rgba(44 44 44 / 60%);
@@ -128,7 +119,23 @@
   overflow: hidden;
 }
 
-@media (max-width: 1080px) {
+@media (hover: hover) and (pointer: fine) {
+  .header-link:hover {
+    color: $dark-color;
+    background-color: $light-color;
+  }
+
+  .header-link:active {
+    color: rgba(44 44 44 / 60%);
+    background-color: $header-link-active;
+  }
+
+  .header__navigation-toggle:hover {
+    background-color: $dark-color;
+  }
+}
+
+@media (max-width: 1101px) {
   .header__grid {
     display: grid;
     grid-template-rows: 50px auto;

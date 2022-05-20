@@ -1,4 +1,4 @@
-header.header#header
+header.header#header(data-aos="fade-down" data-aos-duration="1000")
   .header__grid
     .header__logo
       a(class="header__logo-link" href="index.html")
@@ -16,7 +16,9 @@ header.header#header
         li.header__navigation-item
           a(href="#reviews-screen" class="header__navigation-link header-link") Отзывы
         li.header__navigation-item
-          a(href="" class="header__navigation-link header-link") Контакты
+          a(href="#delivery-screen" class="header__navigation-link header-link") Доставка
+        li.header__navigation-item
+          a(href="#footer" class="header__navigation-link header-link") Контакты
     .header__navigation-toggle-block
       button(class="header__navigation-toggle header-link" id="navigation-toggle" onclick="navigationToggle()" aria-label="Кнопка открытия меню навигации")
         <svg class="menu-icon header__navigation-toggle-icon" width="14" height="14" viewBox="0 0 14 14" fill="#F2F2F2" xmlns="http://www.w3.org/2000/svg">

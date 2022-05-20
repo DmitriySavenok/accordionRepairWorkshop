@@ -72,3 +72,15 @@
 .review-social-link:hover .review-social-icon {
   fill: $main-color;
 }
+
+@media (max-width: 500px) {
+  .review-card {
+    height: 400px;
+  }
+}
+
+@media (max-width: 380px) {
+  .review-card {
+    height: 450px;
+  }
+}

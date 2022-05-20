@@ -63,40 +63,6 @@
     -4px -4px 8px rgba(255 255 255 / 90%),
     4px 4px 10px rgba(206 206 206 / 90%);
   user-select: none;
-
-  &:hover {
-    background: linear-gradient(135deg, #e6e6e6 0%, #fefefe 100%);
-    box-shadow:
-      inset 1px 1px 2px rgba(255 255 255 / 30%),
-      inset -1px -1px 2px rgba(218 218 218 / 50%),
-      -5px 5px 10px rgba(218 218 218 / 20%),
-      5px -5px 10px rgba(218 218 218 / 20%),
-      -5px -5px 10px rgba(255 255 255 / 90%),
-      5px 5px 13px rgba(218 218 218 / 90%);
-  }
-
-  &:hover .services-screen__button {
-    color: $main-color;
-    border: 1px solid $main-color;
-  }
-
-  &:hover .services-screen__button svg {
-    fill: $main-color;
-  }
-}
-
-.services-screen__item .services-screen__button:hover {
-  color: $light-color;
-  background-color: $main-color;
-}
-
-.services-screen__item .services-screen__button:active {
-  background-color: $button-active;
-  border: 1px solid $button-active;
-}
-
-.services-screen__item .services-screen__button:hover svg {
-  fill: $light-color;
 }
 
 .services-screen__item-head {
@@ -118,6 +84,60 @@
 .services-screen__item-button {
   margin-top: auto;
   margin-bottom: 0;
+}
+
+.services-screen__button:hover {
+  color: $button-active;
+  border: 1px solid $button-active;
+}
+
+.services-screen__button:hover .button-icon {
+  fill: $button-active;
+}
+
+.services-screen__button:active {
+  color: $light-color;
+  background-color: $button-active;
+  border: 1px solid $button-active;
+}
+
+.services-screen__button:active .button-icon {
+  fill: $light-color;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .services-screen__item:hover {
+    background: linear-gradient(135deg, #e6e6e6 0%, #fefefe 100%);
+    box-shadow:
+      inset 1px 1px 2px rgba(255 255 255 / 30%),
+      inset -1px -1px 2px rgba(218 218 218 / 50%),
+      -5px 5px 10px rgba(218 218 218 / 20%),
+      5px -5px 10px rgba(218 218 218 / 20%),
+      -5px -5px 10px rgba(255 255 255 / 90%),
+      5px 5px 13px rgba(218 218 218 / 90%);
+  }
+
+  .services-screen__item:hover .services-screen__button {
+    color: $main-color;
+    border: 1px solid $main-color;
+  }
+
+  .services-screen__item:hover .services-screen__button svg {
+    fill: $main-color;
+  }
+
+  .services-screen__item .services-screen__button:hover {
+    color: $light-color;
+  }
+
+  .services-screen__item .services-screen__button:active {
+    background-color: $button-active;
+    border: 1px solid $button-active;
+  }
+
+  .services-screen__item .services-screen__button:hover svg {
+    fill: $light-color;
+  }
 }
 
 @media (max-width: 1080px) {
