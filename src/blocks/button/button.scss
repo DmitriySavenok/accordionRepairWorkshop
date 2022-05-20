@@ -36,9 +36,16 @@
   .button:hover {
     color: $light-color;
     background-color: $main-color;
+    border: 1px solid $main-color;
   }
 
   .button:hover .button-icon {
     fill: $light-color;
+  }
+
+  .button:active {
+    color: $light-color;
+    background-color: $button-active;
+    border: 1px solid $button-active;
   }
 }

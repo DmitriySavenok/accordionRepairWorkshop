@@ -43,9 +43,20 @@
   .feedback-button:hover {
     color: $dark-color;
     background-color: $light-color;
+    border: 1px solid $light-color;
   }
 
   .feedback-button:hover .feedback-button-icon {
+    fill: $dark-color;
+  }
+
+  .feedback-button:active {
+    color: $dark-color;
+    background-color: $light-color;
+    border: 1px solid $light-color;
+  }
+
+  .feedback-button:active .feedback-button-icon {
     fill: $dark-color;
   }
 }
