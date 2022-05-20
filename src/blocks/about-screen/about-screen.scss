@@ -23,12 +23,20 @@
 }
 
 .about-screen__link-in-text {
-  color: $main-color;
+  color: $dark-color;
   text-decoration: none;
+  text-decoration: underline;
+  transition: 0.3s ease;
 
-  &:hover {
+  &:active {
+    color: $button-active;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about-screen__link-in-text:hover {
     color: $main-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
