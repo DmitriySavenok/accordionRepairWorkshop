@@ -9,7 +9,7 @@
 
 .header__grid {
   display: grid;
-  grid-template-columns: 160px auto 143px;
+  grid-template-columns: 160px auto auto;
 }
 
 .header__navigation {
@@ -66,6 +66,16 @@
 .header__social-icons-list {
   margin: 0;
   padding: 0;
+}
+
+.header__navigation-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__social-icons-list {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__navigation-item,
@@ -156,6 +166,7 @@
   }
 
   .header__navigation-list {
+    display: block;
     transform: translateX(-100%);
     opacity: 0;
     transition: all 0.3s;
