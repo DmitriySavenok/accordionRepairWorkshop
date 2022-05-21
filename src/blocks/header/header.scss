@@ -68,6 +68,11 @@
   padding: 0;
 }
 
+.header__navigation-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .header__social-icons-list {
   display: flex;
   justify-content: flex-end;
@@ -161,6 +166,7 @@
   }
 
   .header__navigation-list {
+    display: block;
     transform: translateX(-100%);
     opacity: 0;
     transition: all 0.3s;
