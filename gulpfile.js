@@ -4,9 +4,10 @@ const del = require('del');
 const pug = require('gulp-pug');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass')(require('sass'));
-const autoprefixer = require('gulp-autoprefixer');
+const postcss = require('gulp-postcss');
+const cssnano = require('cssnano');
+const autoprefixer = require('autoprefixer');
 const gcmq = require('gulp-group-css-media-queries');
-const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const browsersync = require('browser-sync').create();
@@ -47,12 +48,19 @@ function browserSync() {
 
 function html() {
   return src(path.src.pug)
-    .pipe(pug())
+    .pipe(pug({pretty: true}))
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream());
 }
 
 function css() {
+  var plugins = [
+    autoprefixer({
+      overrideBrowserslist: ["last 5 version"],
+      cascade: true
+    }),
+    cssnano()
+  ];
   return src(path.src.scss)
     .pipe(sourcemaps.init())
     .pipe(
@@ -61,20 +69,15 @@ function css() {
       })
     )
     .pipe(gcmq())
-    .pipe(autoprefixer({
-      overrideBrowserslist: ["last 5 version"],
-      cascade: true
-    }))
     .pipe(sourcemaps.write())
     .pipe(rename({dirname: ''}))
     .pipe(dest(path.build.css))
-    .pipe(cleanCSS())
+    .pipe(postcss(plugins))
     .pipe(
       rename({
         extname: ".min.css"
       })
     )
-    .pipe(sourcemaps.write())
     .pipe(rename({dirname: ''}))
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream());

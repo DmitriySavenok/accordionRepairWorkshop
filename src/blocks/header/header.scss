@@ -9,7 +9,7 @@
 
 .header__grid {
   display: grid;
-  grid-template-columns: 160px auto 143px;
+  grid-template-columns: 160px auto auto;
 }
 
 .header__navigation {
@@ -66,6 +66,11 @@
 .header__social-icons-list {
   margin: 0;
   padding: 0;
+}
+
+.header__social-icons-list {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__navigation-item,
