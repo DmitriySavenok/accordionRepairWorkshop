@@ -6,6 +6,7 @@
 .button {
   display: grid;
   grid-template-columns: auto auto;
+  gap: 16px;
   align-items: center;
   justify-content: space-between;
   padding: 4px 16px;
