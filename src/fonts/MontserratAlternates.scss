@@ -3,6 +3,7 @@
   font-family: MontserratAlternates;
   font-style: normal;
   src: url("../fonts/MontserratAlternates-Light.woff2"), url("../fonts/MontserratAlternates-Light.woff"), url("../fonts/MontserratAlternates-Light.ttf");
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   font-family: MontserratAlternates;
   font-style: normal;
   src: url("../fonts/MontserratAlternates-Regular.woff2"), url("../fonts/MontserratAlternates-Regular.woff"), url("../fonts/MontserratAlternates-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   font-family: MontserratAlternates;
   font-style: normal;
   src: url("../fonts/MontserratAlternates-SemiBold.woff2"), url("../fonts/MontserratAlternates-SemiBold.woff"), url("../fonts/MontserratAlternates-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
@@ -24,4 +27,5 @@
   font-family: MontserratAlternates;
   font-style: normal;
   src: url("../fonts/MontserratAlternates-Bold.woff2"), url("../fonts/MontserratAlternates-Bold.woff"), url("../fonts/MontserratAlternates-Bold.ttf");
+  font-display: swap;
 }
