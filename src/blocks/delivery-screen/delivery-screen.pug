@@ -8,7 +8,7 @@ section.delivery-screen
             <source srcset="img/photo/delivery-screen/map-link-img.avif" type="image/avif">
             <source srcset="img/photo/delivery-screen/map-link-img.webp" type="image/webp">
             <source srcset="img/photo/delivery-screen/map-link-img.jpg" type="image/jpg">
-            <img width="1060" class="delivery-screen__photo" src="img/photo/delivery-screen/map-link-img.jpg" alt="Фото карты Клинцов">
+            <img loading="lazy" width="553" height="312" class="delivery-screen__photo" src="img/photo/delivery-screen/map-link-img.jpg" alt="Фото карты Клинцов">
           </picture>
           span.delivery-screen__address
             <svg class="delivery-screen__gps-icon"  width="12" height="17" viewBox="0 0 12 17" xmlns="http://www.w3.org/2000/svg">
@@ -18,8 +18,8 @@ section.delivery-screen
         p.delivery-screen__info-text Если вы находитесь в другом городе или регионе и у Вас нет возможности лично привезти инструмент, можно воспользоваться услугами транспортных компаний («Деловые линии», «СДЭК»). В пределах Брянской области могу лично осуществить доставку отремонтированного инструмента.
         .delivery-screen__delivery-company-block
           a(href="https://www.dellin.ru/" class="delivery-screen__delivery-company-link busines-lines-logo" target="_blank")
-            img(class="delivery-screen__delivery-company-logo" src="img/photo/delivery-screen/delivery-busines-lines.png", alt="Логотип деловых линий")
+            img(class="delivery-screen__delivery-company-logo" loading="lazy" src="img/photo/delivery-screen/delivery-busines-lines.png", alt="Логотип деловых линий")
           a(href="https://www.cdek.ru/ru" class="delivery-screen__delivery-company-link cdek-logo" target="_blank")
-            img(class="delivery-screen__delivery-company-logo" src="img/photo/delivery-screen/delivery-cdek.png", alt="Логотип CDEK")
+            img(class="delivery-screen__delivery-company-logo" loading="lazy" src="img/photo/delivery-screen/delivery-cdek.png", alt="Логотип CDEK")
 
 include ../map/map.pug
