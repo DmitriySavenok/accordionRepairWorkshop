@@ -23,6 +23,8 @@
 
 .gallery-screen__image {
   box-sizing: border-box;
+  width: 100%;
+  height: auto;
   padding: 5px;
   background: $light-color;
   border: 1px solid #ddd;

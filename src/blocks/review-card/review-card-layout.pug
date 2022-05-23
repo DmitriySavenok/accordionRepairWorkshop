@@ -14,7 +14,7 @@ block vars
       picture
         source(srcset='img/photo/reviews-screen-avatars/' + clientClass + '.webp' type="image/webp")
         source(srcset='img/photo/reviews-screen-avatars/' + clientClass + '.jpg' type="image/jpg")
-        img(width="63" height="63" class="review-card__img" src='img/photo/reviews-screen-avatars/' + clientClass + '.jpg' alt="Фото клиента")
+        img(loading="lazy" width="63" height="63" class="review-card__img" src='img/photo/reviews-screen-avatars/' + clientClass + '.jpg' alt="Фото клиента")
     .review-card__client-info
       p.review-card__client-name #{clientName}
       p.review-card__client-instrument #{clientsInstrumen}
