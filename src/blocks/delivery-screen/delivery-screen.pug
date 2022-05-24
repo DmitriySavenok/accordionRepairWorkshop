@@ -1,8 +1,8 @@
 section.delivery-screen
   .container-custom
-    h2.delivery-screen__title#delivery-screen Доставка
+    h2.delivery-screen__title#delivery-screen(data-aos="fade-down" data-aos-duration="1300" data-aos-delay="200") Доставка
     .delivery-screen__grid
-      .delivery-screen__map-block
+      .delivery-screen__map-block(data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400")
         button(class="delivery-screen__button" data-bs-toggle="modal" data-bs-target="#mapModal")
           <picture>
             <source srcset="img/photo/delivery-screen/map-link-img.avif" type="image/avif">
@@ -15,11 +15,11 @@ section.delivery-screen
               <path d="M5.375 15.6875C5.65625 16.125 6.3125 16.125 6.59375 15.6875C11.1562 9.125 12 8.4375 12 6C12 2.6875 9.3125 0 6 0C2.65625 0 0 2.6875 0 6C0 8.4375 0.8125 9.125 5.375 15.6875ZM6 8.5C4.59375 8.5 3.5 7.40625 3.5 6C3.5 4.625 4.59375 3.5 6 3.5C7.375 3.5 8.5 4.625 8.5 6C8.5 7.40625 7.375 8.5 6 8.5Z"/>
             </svg> Брянская область, г. Клинцы
       .delivery-screen__info-block
-        p.delivery-screen__info-text Если вы находитесь в другом городе или регионе и у Вас нет возможности лично привезти инструмент, можно воспользоваться услугами транспортных компаний («Деловые линии», «СДЭК»). В пределах Брянской области могу лично осуществить доставку отремонтированного инструмента.
+        p.delivery-screen__info-text(data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700") Если вы находитесь в другом городе или регионе и у Вас нет возможности лично привезти инструмент, можно воспользоваться услугами транспортных компаний («Деловые линии», «СДЭК»). В пределах Брянской области могу лично осуществить доставку отремонтированного инструмента.
         .delivery-screen__delivery-company-block
-          a(href="https://www.dellin.ru/" class="delivery-screen__delivery-company-link busines-lines-logo" target="_blank")
+          a(href="https://www.dellin.ru/" class="delivery-screen__delivery-company-link busines-lines-logo" target="_blank" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800")
             img(class="delivery-screen__delivery-company-logo" loading="lazy" src="img/photo/delivery-screen/delivery-busines-lines.png", alt="Логотип деловых линий")
-          a(href="https://www.cdek.ru/ru" class="delivery-screen__delivery-company-link cdek-logo" target="_blank")
+          a(href="https://www.cdek.ru/ru" class="delivery-screen__delivery-company-link cdek-logo" target="_blank" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900")
             img(class="delivery-screen__delivery-company-logo" loading="lazy" src="img/photo/delivery-screen/delivery-cdek.png", alt="Логотип CDEK")
 
 include ../map/map.pug
