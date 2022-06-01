@@ -17,6 +17,7 @@
 @import "blocks/button-to-top/button-to-top.scss";
 
 body {
+  overflow-x: hidden;
   font-family: MontserratAlternates, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
