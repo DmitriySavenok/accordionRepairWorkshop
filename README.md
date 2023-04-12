@@ -20,3 +20,4 @@
 * [AOS](https://michalsnik.github.io/aos/) - библиотека с анимациями при скроле страницы.
 * Использовался [Конструктор карт Яндекса](https://yandex.ru/map-constructor/) для блока доставки.
 * Подключена яндекс метрика и яндекс веб-мастер.
+* [Отчет](https://pagespeed.web.dev/analysis/http-xn--80abej9agceem0a2n-xn--p1ai/e5d1ti2qsg?form_factor=mobile) о производительности сайта в PageSpeed Insights
