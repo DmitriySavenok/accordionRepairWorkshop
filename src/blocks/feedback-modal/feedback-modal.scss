@@ -27,6 +27,21 @@
   border: 1px solid rgba(44 44 44 / 60%);
   border-radius: 6px;
   outline-color: $dark-color;
+
+  &:focus {
+    border: 1px solid $dark-color;
+    outline: $dark-color solid 1px;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 1px solid $invalid-input;
+    outline: $invalid-input solid 1px;
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border: 1px solid $valid-input;
+    outline: $valid-input solid 1px;
+  }
 }
 
 .feedback-modal__form-textarea {
@@ -69,10 +84,6 @@
   .feedback-modal__button-block {
     grid-template-columns: auto;
     gap: 16px;
-  }
-
-  .feedback-modal-close-button {
-    position: block;
   }
 }
 
